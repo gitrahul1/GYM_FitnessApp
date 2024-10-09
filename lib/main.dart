@@ -68,7 +68,7 @@ void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
   // await dotenv.load(); // Load the environment variables
-
+  //my git commit
   await Firebase.initializeApp(
       options: FirebaseOptions(
         apiKey: 'AIzaSyAmvhKgRD2MRnxQdFjxnrdpKFvFZ3munAw',
