@@ -70,14 +70,14 @@ void main() async {
   // await dotenv.load(); // Load the environment variables
   //my git commit
   await Firebase.initializeApp(
-      options: FirebaseOptions(
-        apiKey: 'AIzaSyAmvhKgRD2MRnxQdFjxnrdpKFvFZ3munAw',
-        appId: '1:847658616875:android:612576084842bf3cf8426e',
-        projectId: 'fitness-f60d8',
-        /*iosBundleId: 'com.sample.app.iphone'*/ messagingSenderId: '847658616875',
-      ));/*Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );*/
+      // options: FirebaseOptions(
+      //   apiKey: 'AIzaSyAmvhKgRD2MRnxQdFjxnrdpKFvFZ3munAw',
+      //   appId: '1:847658616875:android:612576084842bf3cf8426e',
+      //   projectId: 'fitness-f60d8',
+      //   /*iosBundleId: 'com.sample.app.iphone'*/ messagingSenderId: '847658616875',
+      // ));/*Firebase.initializeApp(
+    // options: DefaultFirebaseOptions.currentPlatform,
+  );
   PushNotificationService pushNotificationService = PushNotificationService();
   await pushNotificationService.initialize();
 
