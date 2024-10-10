@@ -17,14 +17,11 @@ class ForgetPassScreen extends StatefulWidget {
 
 class _ForgetPassScreenState extends State<ForgetPassScreen> {
 
-
-
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _controllerEmail = TextEditingController();
 
   void _showSnackbar(String message) {
     ScaffoldMessenger.of(context).showSnackBar(
-
       SnackBar(
         duration:Duration(seconds: 1) ,
         content: Text(message,style: TextStyle(color: MyColorName.colorfillBOx),),
@@ -34,9 +31,7 @@ class _ForgetPassScreenState extends State<ForgetPassScreen> {
   }
 
   void _validateAndSubmit() {
-
     Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context) => VerifyOtpScreen()));
-
     /*   if (_controllerEmail.text.isEmpty) {
       _showSnackbar('Please Enter your Email...');
       return null;
@@ -44,22 +39,18 @@ class _ForgetPassScreenState extends State<ForgetPassScreen> {
    else {
       _showSnackbar('Please correct the errors in the form.');
     }*/
-
   }
 
   @override
   void dispose() {
     _controllerEmail.dispose();
-
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
-
     return Scaffold(
-
       body: SingleChildScrollView(
         child: Form(
           key: _formKey,
@@ -70,15 +61,12 @@ class _ForgetPassScreenState extends State<ForgetPassScreen> {
               children: [
                 const SizedBox(height: 20),
                CustomTextWidget(title: DemoLocalization.of(context)!.translate('Skip').toString(),fontFamily: Fonts.montserrat,icon: Icons.arrow_back_ios,imageAsset: ""),
-
                 const SizedBox(height: 20),
-                CustomText(
-                  text:  DemoLocalization.of(context)!.translate('ForgotPassword').toString(),//"Forgot Password",
+                CustomText(text:DemoLocalization.of(context)!.translate('ForgotPassword').toString(),//"Forgot Password",
                   fontSize: 8.0,
                   color: MyColorName.colorTextFour,
                   fontWeight: FontWeight.bold,
-                  fontFamily: Fonts.roboto,
-                ),
+                  fontFamily: Fonts.roboto,),
 
                 const SizedBox(height: 10),
                 CustomText(
@@ -100,12 +88,11 @@ class _ForgetPassScreenState extends State<ForgetPassScreen> {
                 CustomTextFormField(
                  // labelText: 'Email',
                   hintText: DemoLocalization.of(context)!.translate('Enteryouremail').toString(),//'Enter your email',
-
                   controller: _controllerEmail,
                   // icon: "Icons.email",
                   secondaryIcon: Icons.check,
                   onChanged: (value) {
-                    print('Email: $value');
+                   // print('Email: $value');
                   },
                 ),
                 SizedBox(height: screenSize.height/8),

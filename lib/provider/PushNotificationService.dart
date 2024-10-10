@@ -84,6 +84,8 @@ class PushNotificationService {
   void _handleNotificationClick(RemoteMessage message) {
     // Example of using GetX for navigation
     print("object========YYYYYYYYYYYYYYYYYYY");
+    // Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context) => const MyHomePage(title: '',)));
+
     // Get.toNamed('/home');
     // Get.toNamed('/home'); // Replace '/home' with your actual home screen route
     // GetPage(name: '/home', page: () => HomeScreen());
@@ -94,6 +96,8 @@ class PushNotificationService {
     // print("object======== getYYYYYYYYYYYYYYYYYYY");
     if (payload == 'home') {
       // print("object======== getHHHHH");
+      // Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context) => const MyHomePage(title: '',)));
+
       // Navigate to home screen
       // Get.toNamed('/home');
       // GetPage(name: '/home', page: () => HomeScreen());

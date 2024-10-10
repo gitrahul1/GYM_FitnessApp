@@ -54,7 +54,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         UserCredential userCredential = await FirebaseAuth.instance.signInWithCredential(credential);
         final User? user = userCredential.user;
         return user;
-
         // return userCredential.user;
 
       }
@@ -150,22 +149,18 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
   }
 
-
-
   @override
   void dispose() {
     _controllerName.dispose();
     _controllerPhoneNo.dispose();
     _controllerEmail.dispose();
     _controllerPassword.dispose();
-
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SingleChildScrollView(
         child: Form(
           key: _formKey,

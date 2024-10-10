@@ -65,22 +65,21 @@ class _MyAppState extends State<MyApp> {
 void main() async {
   // WidgetsFlutterBinding.ensureInitialized(); // Ensure binding is initialized
   // Locale locale = await getLocale(); // Get the saved locale
-
   WidgetsFlutterBinding.ensureInitialized();
   // await dotenv.load(); // Load the environment variables
   //my git commit
   await Firebase.initializeApp(
-      // options: FirebaseOptions(
-      //   apiKey: 'AIzaSyAmvhKgRD2MRnxQdFjxnrdpKFvFZ3munAw',
-      //   appId: '1:847658616875:android:612576084842bf3cf8426e',
-      //   projectId: 'fitness-f60d8',
-      //   /*iosBundleId: 'com.sample.app.iphone'*/ messagingSenderId: '847658616875',
-      // ));/*Firebase.initializeApp(
+       options: FirebaseOptions(
+         apiKey: 'AIzaSyAmvhKgRD2MRnxQdFjxnrdpKFvFZ3munAw',
+         appId: '1:847658616875:android:612576084842bf3cf8426e',
+         // appId: '1:847658616875:ios:198f066352effaaaf8426e',
+         projectId: 'fitness-f60d8',
+        /*iosBundleId: 'com.sample.app.iphone'*/ messagingSenderId: '847658616875',
+       ));/*Firebase.initializeApp(
     // options: DefaultFirebaseOptions.currentPlatform,
-  );
+  );*/
   PushNotificationService pushNotificationService = PushNotificationService();
   await pushNotificationService.initialize();
-
   runApp(MyApp()); // Pass the locale to your main app
 }
 
@@ -155,9 +154,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }*/
-
-
-
 
 /*import 'package:fitness/auth/LoginScreenold.dart';
 import 'package:fitness/auth/RegistrationScreen.dart';

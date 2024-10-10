@@ -36,9 +36,7 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
 
   void _validateAndSubmit() {
     Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context) => ProfileScreen()));
-
     //Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context) => RegistrationScreen()));
-
     /*if (_controllerEmail.text.isEmpty) {
       _showSnackbar('Please Enter your Email...');
       return null;

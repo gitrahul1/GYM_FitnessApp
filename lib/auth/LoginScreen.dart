@@ -161,7 +161,6 @@ class _LoginScreenState extends State<LoginScreen> {
     else {
       print(response.reasonPhrase);
     }
-
   }
   Future<void> loginApi() async {
     /*var request = http.Request('POST', Uri.parse('http://tfbfitness.com/api/login?email=testuser@example.com&password=password123'));
@@ -204,7 +203,7 @@ class _LoginScreenState extends State<LoginScreen> {
         prefs.setString('useremail', userEmail.toString());
         prefs.setString('userid', userId.toString());
        // print("Type=================username ${userName}");
-        print("Type=================userId ${userId}");
+       // print("Type=================userId ${userId}");
         Navigator.push(
             context,
             MaterialPageRoute(

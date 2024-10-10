@@ -23,10 +23,10 @@ class LanguageProvider extends ChangeNotifier {
 
   Future <void> setLanguage(String languageCode) async {
     // SharedPreferences prefs = await SharedPreferences.getInstance();
-
     _selectedLanguage = languageCode;
     notifyListeners();
   }
+
   Future<String> translate(String text) async {
     try {
       if (_selectedLanguage == 'en') {
@@ -44,9 +44,6 @@ class LanguageProvider extends ChangeNotifier {
     }
   }
 
-
-
-
   //  Future<String> translate(String text) async {
   //   if(_selectedLanguage == 'en'){
   //    String? language =  await languageFromPrefs();
@@ -60,7 +57,6 @@ class LanguageProvider extends ChangeNotifier {
   //     return translation.text;
   //   }
   // }
-
 
 
 }

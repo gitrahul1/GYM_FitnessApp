@@ -1,27 +1,10 @@
 import 'dart:async';
-
-import 'package:fitness/PurChaseProgram/PurChaseProgram.dart';
-import 'package:fitness/PurChaseProgram/StartNowSecond.dart';
-import 'package:fitness/auth/ForgetPassScreen.dart';
-import 'package:fitness/checkout/CheckOutScreen.dart';
 import 'package:fitness/colors.dart';
-import 'package:fitness/profile/MainProfile.dart';
-import 'package:fitness/profile/PortfolioScreen.dart';
-import 'package:fitness/profile/ProfileDetailsScreen.dart';
-import 'package:fitness/profile/ProfileScreen.dart';
-import 'package:fitness/score/ScoreScreen.dart';
-import 'package:fitness/success/SuccessScreen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'PurChaseProgram/StartNowProgram.dart';
 import 'auth/LoginScreen.dart';
-import 'auth/RegistrationScreen.dart';
 import 'bottomdrawer/homeScreen.dart';
-import 'checkout/CheckOutSecondScreen.dart';
-import 'onbordingpage/OnboardingPage.dart';
-import 'onbordingpage/onboardingScreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
